@@ -8,6 +8,7 @@ namespace University
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("test");
             List<Student> listStudents = new List<Student>();
             Lectyrer lecture = new Lectyrer("Ivan", "Petrov", "maths");
 
