@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\Unit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDriver", "WebDriver\WebDriver.csproj", "{D5259C4F-0535-4B57-94A5-B13ECFA16A06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldQaLight", "OldQaLight\OldQaLight.csproj", "{D71A91FC-ABC5-441C-AF7C-967746FEE075}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{D5259C4F-0535-4B57-94A5-B13ECFA16A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5259C4F-0535-4B57-94A5-B13ECFA16A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5259C4F-0535-4B57-94A5-B13ECFA16A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D71A91FC-ABC5-441C-AF7C-967746FEE075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D71A91FC-ABC5-441C-AF7C-967746FEE075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D71A91FC-ABC5-441C-AF7C-967746FEE075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D71A91FC-ABC5-441C-AF7C-967746FEE075}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
