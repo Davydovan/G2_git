@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
+using System.Collections.Generic;
 
 namespace OldQaLight
 {
@@ -27,6 +28,13 @@ namespace OldQaLight
        
         [FindsBy(How =How.CssSelector, Using = ".alert.alert-error")]
         public IWebElement errorRegistrationPopup;
+
+        [FindsBy(How = How.CssSelector, Using = ".alert.alert-error")] //пример
+        public List<IWebElement> link;
+
+        //[CacheLookup]
+        //[FindsBySequence]
+        //[FindsByAll]
 
        
 

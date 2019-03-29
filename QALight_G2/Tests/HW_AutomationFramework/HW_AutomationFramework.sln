@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW_AutomationFramework", "HW_AutomationFramework\HW_AutomationFramework.csproj", "{18CE35BD-C2A7-48C1-9F51-C90EB0A79A21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW_Rozetka", "HW_Rozetka\HW_Rozetka.csproj", "{7E4532B1-DA7E-4BE9-B61D-855F5870C921}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18CE35BD-C2A7-48C1-9F51-C90EB0A79A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18CE35BD-C2A7-48C1-9F51-C90EB0A79A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18CE35BD-C2A7-48C1-9F51-C90EB0A79A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18CE35BD-C2A7-48C1-9F51-C90EB0A79A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E4532B1-DA7E-4BE9-B61D-855F5870C921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E4532B1-DA7E-4BE9-B61D-855F5870C921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E4532B1-DA7E-4BE9-B61D-855F5870C921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E4532B1-DA7E-4BE9-B61D-855F5870C921}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE3440DE-B889-4735-A971-E5E70AA60E89}
+	EndGlobalSection
+EndGlobal
