@@ -12,6 +12,7 @@ namespace HW_Rozetka.Tests
     public class FindAsus
     {
         IWebDriver driver;
+        
 
         [SetUp]
         public void SetUp()
@@ -32,21 +33,16 @@ namespace HW_Rozetka.Tests
         [Test]
         public void TestActionAsus()
         {
-            //actions.MoveToElement(element).ClickAndHold()
-            //   .MoveToElement(targetElement).Release().Perform();
-            //EtsyMainPage etsyMainPage = new EtsyMainPage(driver);
-
-            // actions.MoveToElement(element).ClickAndHold()
-            //   .MoveToElement(targetElement, targetElement.Size.Width / 2, 2).Release().Perform()
-            //, button.Size.Width/ 2, 2
             Actions actions = new Actions(driver);
             HomePage homePage = new HomePage(driver);
-            
-            actions.MoveToElement(homePage.searchArea.menuButton)
-                .ClickAndHold()
-                .MoveToElement(homePage.searchArea.menuLaptop)
-                .MoveToElement(homePage.searchArea.asus)
-                .Build().Perform();
+            CustomWaits customWaits = new CustomWaits();
+            actions.MoveToElement(homePage.searchArea.menuLaptop).Perform();            
+            customWaits.SetImplicitWaitTimeout(driver, 40);
+
+            actions.MoveToElement(homePage.searchArea.asus).Click().Perform();
+            customWaits.SetImplicitWaitTimeout(driver, 40);                       
+            var newPage = driver.Url;
+            Assert.AreEqual("https://rozetka.com.ua/notebooks/c80004/filter/producer=asus/", newPage);
             TimeSpan.FromSeconds(2000);
         }
     }

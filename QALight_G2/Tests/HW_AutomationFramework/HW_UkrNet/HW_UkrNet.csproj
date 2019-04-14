@@ -6,11 +6,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{58E0F658-CD4E-48A2-BC2E-EC3A6185D909}</ProjectGuid>
+    <ProjectGuid>{F9389634-F4BF-4942-96DF-AAB98C21F73E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EtsyAutomationTests</RootNamespace>
-    <AssemblyName>EtsyAutomationTests</AssemblyName>
+    <RootNamespace>HW_UkrNet</RootNamespace>
+    <AssemblyName>HW_UkrNet</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -54,22 +54,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pages\EtsyMainPage.cs" />
-    <Compile Include="Pages\EtsySearchPage.cs" />
-    <Compile Include="Pages\SearchArea.cs" />
+    <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests\EtsyTests.cs" />
+    <Compile Include="Tests\LoginNegativeTest.cs" />
+    <Compile Include="Tests\SendEmailTest.cs" />
+    <Compile Include="Tests\SendEmailWithFile.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\G2_AutomationFramework\G2_AutomationFramework.csproj">
-      <Project>{c0f23936-a51c-49d8-bab0-faeaaf712f56}</Project>
-      <Name>G2_AutomationFramework</Name>
+    <ProjectReference Include="..\HW_AutomationFramework\HW_AutomationFramework.csproj">
+      <Project>{18ce35bd-c2a7-48c1-9f51-c90eb0a79a21}</Project>
+      <Name>HW_AutomationFramework</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

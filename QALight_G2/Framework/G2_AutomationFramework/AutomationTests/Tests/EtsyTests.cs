@@ -2,7 +2,7 @@
 using G2_AutomationFramework.Utils;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using G2_AutomationFramework.Driver;
 using System;
 
 namespace EtsyAutomationTests.Tests
@@ -14,7 +14,7 @@ namespace EtsyAutomationTests.Tests
         [SetUp]
         public void SetUp()
         {
-            driver = new ChromeDriver();
+            driver = CustomDriver.Driver;
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://www.etsy.com/");
@@ -43,7 +43,8 @@ namespace EtsyAutomationTests.Tests
                 Console.WriteLine(textItem.Text);
                 Assert.True(textItem.Text.Contains(searchText));
             }
-            
+            driver.TakeScreenshot();
+            driver.ExecuteJavascript("some JS script");
            
         }
     }

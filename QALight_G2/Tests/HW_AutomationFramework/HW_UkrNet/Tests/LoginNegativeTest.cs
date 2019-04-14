@@ -1,14 +1,12 @@
 ﻿using HW_AutomationFramework.Utils;
-using HW_Rozetka.Pages;
+using HW_UkrNet.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Interactions;
-using System;
 
-namespace HW_Rozetka.Tests
+namespace HW_UkrNet.Tests
 {
-    public class BasketPopUp
+    public class LoginNegativeTest
     {
         IWebDriver driver;
 
@@ -19,8 +17,7 @@ namespace HW_Rozetka.Tests
             CustomWaits customWaits = new CustomWaits();
             customWaits.SetImplicitWaitTimeout(driver, 10);
             driver.Manage().Window.Maximize();
-            driver.Navigate().GoToUrl("http://rozetka.com.ua");
-
+            driver.Navigate().GoToUrl("https://www.ukr.net/");
         }
 
         [TearDown]
@@ -30,13 +27,19 @@ namespace HW_Rozetka.Tests
         }
 
         [Test]
-        public void ConsoleWriteTextFromBasketPopUp()
+        public void LogInNegativeTest()
         {
-            Actions actions = new Actions(driver);
             HomePage homePage = new HomePage(driver);
-            actions.MoveToElement(homePage.searchArea.basket).Build().Perform();
-            Console.WriteLine(homePage.searchArea.popUp.GetAttribute("textContent"));           
-            TimeSpan.FromSeconds(2000);
+            driver.SwitchTo().Frame(homePage.iframe);
+
+            homePage.inputName.SetText("microniya@ukr.net");
+            homePage.passwordName.SetText("1qaz2wsx");
+            homePage.submitButton.Click();
+
+            string errorMessage = homePage.errorMessage.Text;
+            Assert.AreEqual(errorMessage, "Неправильні дані");
+
+            driver.SwitchTo().DefaultContent();
         }
     }
 }

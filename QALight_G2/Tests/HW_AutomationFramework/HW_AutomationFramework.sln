@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW_AutomationFramework", "H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW_Rozetka", "HW_Rozetka\HW_Rozetka.csproj", "{7E4532B1-DA7E-4BE9-B61D-855F5870C921}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW_UkrNet", "HW_UkrNet\HW_UkrNet.csproj", "{F9389634-F4BF-4942-96DF-AAB98C21F73E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "ClassLibrary1\Test.csproj", "{21943E52-7D30-45FB-B8A2-4AB720080259}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{7E4532B1-DA7E-4BE9-B61D-855F5870C921}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E4532B1-DA7E-4BE9-B61D-855F5870C921}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E4532B1-DA7E-4BE9-B61D-855F5870C921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9389634-F4BF-4942-96DF-AAB98C21F73E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9389634-F4BF-4942-96DF-AAB98C21F73E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9389634-F4BF-4942-96DF-AAB98C21F73E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9389634-F4BF-4942-96DF-AAB98C21F73E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21943E52-7D30-45FB-B8A2-4AB720080259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21943E52-7D30-45FB-B8A2-4AB720080259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21943E52-7D30-45FB-B8A2-4AB720080259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21943E52-7D30-45FB-B8A2-4AB720080259}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
