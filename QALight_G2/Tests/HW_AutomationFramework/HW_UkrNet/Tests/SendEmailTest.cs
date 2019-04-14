@@ -32,7 +32,7 @@ namespace HW_UkrNet.Tests
             HomePage homePage = new HomePage(driver);
             driver.SwitchTo().Frame(homePage.iframe);
             homePage.inputName.SetText("microniya@ukr.net");
-            homePage.passwordName.SetText("kimi1979");
+            homePage.passwordName.SetText("*****");
             homePage.submitButton.Click();
                                  
             string accountEmail = homePage.accountEmail.Text;
