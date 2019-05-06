@@ -4,32 +4,35 @@ using System;
 namespace UnitTests
 {
    
-    public class UnitTests
+    public class UnitTests : BaseTest
     {
-        [OneTimeSetUp]
-        public void BeforeAllTest()
-        {
-            Console.WriteLine("BeforeAllTest");
-        }
+        #region Move to Based class
+        //[OneTimeSetUp]
+        //public void BeforeAllTest()
+        //{
+        //    Console.WriteLine("BeforeAllTest");
+        //}
 
-        [OneTimeTearDown]
-        public void AfterAllTest()
-        {
-            Console.WriteLine("AfterAllTest");
-        }
+        //[OneTimeTearDown]
+        //public void AfterAllTest()
+        //{
+        //    Console.WriteLine("AfterAllTest");
+        //}
 
 
-        [SetUp]
-        public void BeforeEveryTest()
-        {
-            Console.WriteLine("BeforeEveryTest");
-        }
+        //[SetUp]
+        //public void BeforeEveryTest()
+        //{
+        //    Console.WriteLine("BeforeEveryTest");
+        //}
 
-        [TearDown]
-        public void AfterEveryTest()
-        {
-            Console.WriteLine("AfterEveryTest");
-        }
+        //[TearDown]
+        //public void AfterEveryTest()
+        //{
+        //    Console.WriteLine("AfterEveryTest");
+        //}
+        #endregion
+
 
         [Category("CalculatorTest")]
         [Category("CalculatorTest1")]

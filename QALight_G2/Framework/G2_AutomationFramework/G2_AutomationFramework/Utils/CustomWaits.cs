@@ -1,7 +1,7 @@
-﻿
-namespace G2_AutomationFramework.Utils
+﻿namespace G2_AutomationFramework.Utils
 {
     static class CustomWaits
     {
+
     }
 }
